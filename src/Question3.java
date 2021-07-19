@@ -14,7 +14,7 @@ public class Question3 {
       media.addValue(value, count);
     }
 
-    System.out.println("O valor da média é: "+media.getMedia(media.array, size));
+    System.out.println("O valor da média é: "+ media.getMedia(media.array, size));
     input.close();
   }
 }

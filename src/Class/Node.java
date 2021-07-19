@@ -7,6 +7,9 @@ public class Node {
   public Node left;
   public Node right;
 
+  public Node() {
+  }
+
   public Node(int value) {
     this.value = value;
   }
@@ -26,5 +29,9 @@ public class Node {
   public void setChilds(Node left, Node right) {
     this.left = left;
     this.right = right;
+  }
+
+  public String toString(){
+    return Integer.toString(value);
   }
 }

@@ -18,8 +18,8 @@ public class Media {
   public int getMedia(int array[],int position) {
     if(position == 0) {
       return 0;
-    } else if(position == 5) {
-      return (array[position-1] + getMedia(array,position - 1)) / 5;
+    } else if(position == array.length) {
+      return (array[position - 1] + getMedia(array,position - 1)) / array.length;
     } else {
       return array[position - 1] + getMedia(array,position - 1);
     }
